@@ -1,4 +1,4 @@
-# Metricon Student Success Simulation
+# Metricon University Spring 2025 Undergraduate Student Success Simulation
 
 This repository contains a simulated dataset representing 10,000 undergraduate students enrolled at **Metricon University**, a fictional large public R1 institution modeled after SUNY system trends. The project is designed to support exploratory data analysis, predictive modeling, and the design of student success interventions in higher education.
 
