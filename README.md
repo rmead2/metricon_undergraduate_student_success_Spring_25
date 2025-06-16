@@ -43,12 +43,6 @@ These datasets support:
 │   ├── metricon_undergraduate_data_dictionary.md
 │   └── metricon_graduate_data_dictionary.md
 │
-├── scripts/                   # R scripts used to generate data
-│   └── generate_students.R
-│
-├── notebooks/                 # RMarkdown analysis notebooks
-│   └── data_exploration.Rmd
-│
 ├── .gitignore                 # Files and patterns to exclude from version control
 ├── README.md                  # This project overview
 └── LICENSE                    # MIT License
