@@ -27,15 +27,10 @@ All data is **synthetically generated** using probabilistic rules based on natio
 ├── data/                       # Raw and processed CSV files
 │   └── metricon_undergraduates_student_success_Spring_25.csv
 │
-├── notebooks/                 # RMarkdown analysis notebooks
-│   └── data_exploration.Rmd
-│
 ├── docs/                      # Supporting documentation
 │   └── data_dictionary.md
 │
-├── scripts/                   # R scripts used to generate data
-│   └── generate_students.R
-│
+├── .gitignore                 # Files and patterns to exclude from version control
 ├── README.md                  # This project overview
 └── LICENSE                    # MIT License
 ```
