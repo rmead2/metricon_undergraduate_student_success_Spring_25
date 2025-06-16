@@ -1,48 +1,75 @@
-# Metricon University Spring 2025 Undergraduate Student Success Simulation
+# Metricon University Student Success Simulation (Spring 2025)
 
-This repository contains a simulated dataset representing 10,000 undergraduate students enrolled at **Metricon University**, a fictional large public R1 institution modeled after SUNY system trends. The project is designed to support exploratory data analysis, predictive modeling, and the design of student success interventions in higher education.
+This repository contains two simulated datasets representing **undergraduate** and **graduate** students enrolled at Metricon University, a fictional large public R1 institution modeled after SUNY system trends. The project is designed to support exploratory data analysis, predictive modeling, and the design of student success interventions in higher education.
+
+---
 
 ## Dataset Overview
 
-- **Name:** `metricon_undergraduates_student_success_Spring_25.csv`
-- **Snapshot Term:** Spring 2025
-- **Population:** 10,000 undergraduate students
-- **Institution Type:** Fictional public R1 university
-- **Use Case:** Educational data modeling, student success research, academic analytics training
+### Undergraduate Dataset
+- **File**: `metricon_undergraduates_student_success_Spring_25.csv`
+- **Snapshot Term**: Spring 2025
+- **Population**: 10,000 undergraduate students
+- **Focus**: Demographics, academic performance, financial indicators, student support usage, and graduation outcomes
 
-The dataset includes variables such as:
-- **Demographics** (race/ethnicity, gender, age at entry, first-gen status, etc.)
-- **Academic performance** (GPA, credits, academic standing)
-- **Financial indicators** (EFC, Pell, scholarships, opportunity program)
-- **Support engagement** (advising visits, tutoring sessions)
-- **Basic needs and housing** (food/housing insecurity, housing status)
-- **Enrollment history** (entry term, entry status, major changes, graduation status)
+### Graduate Dataset
+- **File**: `metricon_graduate_student_success_Spring_25.csv`
+- **Snapshot Term**: Spring 2025
+- **Population**: 2,000 graduate students (Master’s and PhD)
+- **Focus**: Program type, degree milestones, assistantship funding, academic productivity, time-to-degree, and wellness markers
 
-All data is **synthetically generated** using probabilistic rules based on national and SUNY-specific trends. No real student data is used.
+---
+
+## Use Cases
+
+These datasets support:
+- Educational data modeling and analysis
+- Student success research and intervention design
+- Institutional planning simulations
+- Academic and career advising analytics
+- Graduate student equity and funding studies
+
+---
 
 ## Repository Structure
 
-```text
+```
 .
 ├── data/                       # Raw and processed CSV files
-│   └── metricon_graduate_student_success_Spring_25.csv
+│   ├── metricon_graduate_student_success_Spring_25.csv
 │   └── metricon_undergraduates_student_success_Spring_25.csv
 │
 ├── docs/                      # Supporting documentation
-│   └── data_dictionary.md
+│   ├── metricon_undergraduate_data_dictionary.md
+│   └── metricon_graduate_data_dictionary.md
+│
+├── scripts/                   # R scripts used to generate data
+│   └── generate_students.R
+│
+├── notebooks/                 # RMarkdown analysis notebooks
+│   └── data_exploration.Rmd
 │
 ├── .gitignore                 # Files and patterns to exclude from version control
 ├── README.md                  # This project overview
 └── LICENSE                    # MIT License
 ```
 
+---
+
 ## Data Generation Logic
 
-Each column in the dataset was generated using rules grounded in real-world enrollment, engagement, and student success trends from public R1 universities (e.g., SUNY system). For example:
+Each column was created using rule-based logic grounded in SUNY and national trends. Examples:
 
 - `first_generation_status` is more likely among students with low EFC and Pell eligibility.
-- `cumulative_gpa` is linked to engagement factors like tutoring, advising, and early alerts.
-- `housing_status` is based on age, entry status, income level, and residency.
-- `opportunity_program_participant` is tied to financial, demographic, and academic equity markers.
+- `cumulative_gpa` is influenced by academic standing, early alerts, and engagement markers like tutoring or advising.
+- `housing_status` relates to residency, income level, and age.
+- `assistantship_type` is shaped by degree type (e.g., TA for humanities PhDs, RA for STEM PhDs).
+- `ABD_status` is TRUE for PhD students who passed their proposal but have not defended their dissertation.
 
-For a full explanation of all columns and generation rules, see the [Data Dictionary](./docs/data_dictionary.md).
+For a complete explanation of each column and the logic behind its generation, see the [Undergraduate Data Dictionary](docs/metricon_undergraduate_data_dictionary.md) and [Graduate Data Dictionary](docs/metricon_graduate_data_dictionary.md).
+
+---
+
+## Disclaimer
+
+All data is **synthetically generated** for educational, research, and demonstration purposes. No real student data is used or referenced.
