@@ -4,7 +4,7 @@ This repository contains a simulated dataset representing 10,000 undergraduate s
 
 ## Dataset Overview
 
-- **Name:** `metricon_undergraduates_full_final.csv`
+- **Name:** `metricon_undergraduates_student_success_Spring_25.csv`
 - **Snapshot Term:** Spring 2025
 - **Population:** 10,000 undergraduate students
 - **Institution Type:** Fictional public R1 university
@@ -25,7 +25,7 @@ All data is **synthetically generated** using probabilistic rules based on natio
 ```text
 .
 ├── data/                       # Raw and processed CSV files
-│   └── metricon_undergraduates_full_final.csv
+│   └── metricon_undergraduates_student_success_Spring_25.csv
 │
 ├── notebooks/                 # RMarkdown analysis notebooks
 │   └── data_exploration.Rmd
