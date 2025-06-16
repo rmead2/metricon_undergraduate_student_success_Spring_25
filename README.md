@@ -2,7 +2,7 @@
 
 This repository contains a simulated dataset representing 10,000 undergraduate students enrolled at **Metricon University**, a fictional large public R1 institution modeled after SUNY system trends. The project is designed to support exploratory data analysis, predictive modeling, and the design of student success interventions in higher education.
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 - **Name:** `metricon_undergraduates_full_final.csv`
 - **Snapshot Term:** Spring 2025
@@ -20,7 +20,7 @@ The dataset includes variables such as:
 
 All data is **synthetically generated** using probabilistic rules based on national and SUNY-specific trends. No real student data is used.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 .
@@ -40,7 +40,7 @@ All data is **synthetically generated** using probabilistic rules based on natio
 └── LICENSE                    # MIT License
 ```
 
-## 🛠️ Data Generation Logic
+## Data Generation Logic
 
 Each column in the dataset was generated using rules grounded in real-world enrollment, engagement, and student success trends from public R1 universities (e.g., SUNY system). For example:
 
